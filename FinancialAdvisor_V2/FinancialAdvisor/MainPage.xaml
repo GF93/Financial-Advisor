@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="FinancialAdvisor.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FinancialAdvisor"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background ="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Resources>
+        <Style TargetType="Button" x:Key="MyButtonStyle">
+            <Setter Property="Background" Value="LightBlue"/>
+            <Setter Property="FontFamily" Value="Arial Black"/>
+            <Setter Property="FontSize" Value="20"/>
+        </Style>
+
+    </Page.Resources>
+    
+    <Grid>
+        
+        <Button Content="Get Rich!" Margin="96,288,0,304" Height="48" Width="192" Style="{StaticResource MyButtonStyle}" Click="button_Click"/>
+        <TextBox x:Name="TextBox" HorizontalAlignment="Left" Margin="10,135,0,0" TextWrapping="Wrap" Text="Financial Advisor" VerticalAlignment="Top" Width="336" Background="LightBlue" FontFamily="Arial Black" FontSize="20" BorderThickness="0" Height="42" TextAlignment="Center" IsReadOnly="True"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="95,595,0,0" TextWrapping="Wrap" Text="Ghassan Faour - Microsoft DX Intern" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="11" Width="193" BorderThickness="0" Height="35"/>
+        <Button x:Name="button" Content="Dictionary + Stocks" HorizontalAlignment="Left" Margin="95,408,0,0" VerticalAlignment="Top" Width="192" Height="55" Style="{StaticResource MyButtonStyle}" Click="button_Click_1"/>
+    </Grid>
+
+</Page>
